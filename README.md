@@ -10,7 +10,7 @@ A. Install Jenkins in K8s cluster
      d. for creating cluster role so that your service account binds to cluster role - Here, a "ClusterRole" named "service reader" is created, and specific permissions 
         (such as ["get", "watch", "list"] are assigned to specific resources.
   
-  3. Run the following command to create Jenkins deployment on K8s -
+  4. Run the following command to create Jenkins deployment on K8s -
      kubectl apply -f jenkins-k8s-volume.yaml
      kubectl apply -f jenkins-k8s-deployment.yaml
      kubectl apply -f jenkins-k8s-service.yaml
